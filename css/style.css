@@ -1,0 +1,129 @@
+:root {
+  --orange: #F33C15;
+  --breakpoint-1: 840px;
+  --medium-font: 'HK-Grotesk-Medium', sans-serif;
+}
+
+body {
+  font-family: var(--medium-font);
+  font-size: 18px;
+  line-height: 1.5;
+  color: #414141;
+  background-image: url('../images/background.jpg');
+  background-size: 100% auto;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+body div {
+  font-family: var(--medium-font);
+}
+
+a {
+  text-decoration: none;
+  color: #414141;
+}
+
+.heading {
+  color: #fff;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: #fff;
+  font-family: 'HK-Grotesk-Bold', sans-serif;
+  font-size: 110px;
+  line-height: 1;
+}
+
+.heading-orange {
+  font-size: 120px;
+  -webkit-text-stroke-color: var(--orange);
+  margin-bottom: 3rem;
+  color: var(--orange);
+}
+
+.button {
+  display: inline-block;
+  background-color: var(--orange);
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border: none;
+  padding: 24px 72px;
+  font-family: 'HK-Grotesk-Bold', sans-serif;
+  cursor: pointer;
+  outline: none;
+}
+
+.container {
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+div blockquote {
+  color: var(--orange);
+  font-size: 36px;
+}
+
+.cite {
+  display: inline-block;
+  color: var(--orange);
+  line-height: 1;
+  padding: 24px 18px;
+  border-radius: 100%;
+  border: solid 3px var(--orange);
+  text-transform: uppercase;
+  margin-top: 12px;
+}
+
+.footer {
+  background-color: #222;
+}
+
+.footer-link {
+  width: 131px;
+  height: 40px;
+  background-image: url('../images/logo.svg');
+}
+
+.fade {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.visible {
+  opacity: 1;
+}
+
+@media (max-width: 800px) {
+  body {
+    font-size: 16px;
+    background-size: auto 120vh;
+  }
+  .heading {
+    font-size: 72px;
+    -webkit-text-stroke-width: 2px;
+  }
+  .button {
+    padding: 18px 32px;
+    font-size: 16px;
+  }
+  .heading-orange {
+    margin-bottom: 24px;
+  }
+  blockquote div {
+    line-height: 1.2;
+  }
+  .schedule-day {
+    padding: 12px;
+  }
+}
+
+@media (max-width: 400px) {
+  .heading {
+    font-size: 48px;
+    -webkit-text-stroke-width: 1px;
+  }
+}
